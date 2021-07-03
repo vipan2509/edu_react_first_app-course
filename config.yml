@@ -1,0 +1,16 @@
+title: Edu_React_first_app
+description: Hello
+template:
+  repo: edu_react_first_app-template
+  name: edu_react_first_app
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
